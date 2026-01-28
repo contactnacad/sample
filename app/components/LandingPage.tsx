@@ -888,7 +888,7 @@ const LandingPage = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">contactuntradd@gmail.com</p>
+                    <p className="text-gray-600">contactnonacad@gmail.com</p>
                   </div>
                 </div>
 
