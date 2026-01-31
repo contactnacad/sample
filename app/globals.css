@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Fast horizontal scrolling animation for experts carousel */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-344px * 6));
+  }
+}
+
+.animate-scroll-fast {
+  animation: scroll 12s linear infinite;
+  will-change: transform;
+}

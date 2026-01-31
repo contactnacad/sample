@@ -62,7 +62,7 @@ const LandingPage = () => {
       id: "digital-safety",
       icon: <FaShieldAlt />,
       title: "Digital Safety & Fraud Prevention",
-      content: "Protect your child from digital threats with essential cybersecurity skills that 95% of schools don't teach.",
+      content: "Scammers prey on kids, teens and senior citizens—don't let yours be the next victim. This powerful session arms students and parents with essential skills to detect and prevent digital frauds before it's too late.",
       outcomes: ["80% reduction in vulnerability", "Recognize 9/10 common scams", "Practical protection tools"],
       price: "₹2,999",
       duration: "2 hours",
@@ -72,9 +72,9 @@ const LandingPage = () => {
     {
       id: "emotional-intelligence",
       icon: <FaBrain />,
-      title: "Emotional Intelligence & Leadership",
-      content: "Build confidence, empathy, and leadership skills that determine 90% of career success.",
-      outcomes: ["42% reduction in conflicts", "Enhanced social skills", "Leadership development"],
+      title: "Emotional Intelligence",
+      content: "Academic excellence alone isn't enough—students must master self-awareness, empathy, and resilience to thrive in life and career. Learn how to always stay happy, manage anger, and build strong relationships through self-awareness, self-regulation, social awareness, and relationship management.",
+      outcomes: ["Enhanced self-awareness", "Better anger management", "Strong relationship building"],
       price: "₹3,499",
       duration: "2.5 hours",
       students: "750+",
@@ -83,9 +83,9 @@ const LandingPage = () => {
     {
       id: "personal-finance",
       icon: <FaHandHoldingUsd />,
-      title: "Smart Money Management",
-      content: "Financial literacy that 85% of adults wish they learned in school. Start early, succeed faster.",
-      outcomes: ["Create personal budgets", "Smart spending habits", "Investment basics"],
+      title: "Personal Finance",
+      content: "Equip students with essential money management skills from an early age. Learn budgeting, saving, and smart investments that can lay the foundation for a successful financial future.",
+      outcomes: ["Create personal budgets", "Smart saving strategies", "Investment basics"],
       price: "₹2,799",
       duration: "2 hours",
       students: "600+",
@@ -94,34 +94,89 @@ const LandingPage = () => {
     {
       id: "startup-entrepreneurship",
       icon: <MdOutlineWork />,
-      title: "Entrepreneurship & Innovation",
-      content: "Develop the entrepreneurial mindset that creates tomorrow's business leaders and innovators.",
-      outcomes: ["Business idea validation", "Pitch presentation skills", "Problem-solving mindset"],
+      title: "Startup & Entrepreneurship",
+      content: "Ignite entrepreneurial spirit—teach idea validation, business planning, and how to build their own venture.",
+      outcomes: ["Business idea validation", "Business planning skills", "Venture building mindset"],
       price: "₹3,999",
       duration: "3 hours",
       students: "400+",
       rating: 4.7
     },
     {
+      id: "leadership-responsibility",
+      icon: <MdSupervisorAccount />,
+      title: "Leadership & Responsibility",
+      content: "Cultivate strong leaders—teach accountability, responsibility, and the mindset needed for future success.",
+      outcomes: ["Leadership accountability", "Responsibility mindset", "Future success skills"],
+      price: "₹3,299",
+      duration: "2 hours",
+      students: "550+",
+      rating: 4.8
+    },
+    {
       id: "ai-digital-literacy",
       icon: <MdTouchApp />,
-      title: "AI & Future Skills",
-      content: "Master AI tools and digital skills that will be essential for 75% of future jobs.",
-      outcomes: ["AI tool proficiency", "Digital productivity", "Future-ready skills"],
+      title: "AI & Digital Literacy in 2025",
+      content: "Equip students with essential digital tools and skills, including AI technologies, required for success in today's tech-driven world. From using basic software to navigating online platforms and understanding AI's role, prepare them for the future workplace.",
+      outcomes: ["AI tool proficiency", "Digital platform navigation", "Future workplace readiness"],
       price: "₹3,799",
       duration: "2.5 hours",
       students: "800+",
       rating: 4.9
     },
     {
-      id: "leadership-responsibility",
-      icon: <MdSupervisorAccount />,
-      title: "Leadership & Character Building",
-      content: "Develop ethical leadership and responsibility that shapes confident, principled individuals.",
-      outcomes: ["Leadership initiatives", "Ethical decision-making", "Team collaboration"],
-      price: "₹3,299",
+      id: "mental-physical-health",
+      icon: <FaHeart />,
+      title: "Mental & Physical Health",
+      content: "Teach students the importance of balancing mental and physical well-being. Learn stress management, mindfulness, Healthy Eating, nutrition, and exercise habits to lead a healthy and fulfilling life.",
+      outcomes: ["Stress management techniques", "Mindfulness practices", "Healthy lifestyle habits"],
+      price: "₹3,199",
+      duration: "2.5 hours",
+      students: "650+",
+      rating: 4.8
+    },
+    {
+      id: "false-marketing-prevention",
+      icon: <FaBan />,
+      title: "False Marketing Prevention",
+      content: "Empower students to identify and avoid false advertising, misleading claims, and manipulative marketing tactics. Develop critical thinking skills to make informed decisions as consumers.",
+      outcomes: ["Identify false advertising", "Critical thinking skills", "Informed consumer decisions"],
+      price: "₹2,899",
+      duration: "2 hours",
+      students: "450+",
+      rating: 4.7
+    },
+    {
+      id: "personality-communication",
+      icon: <FaUsers />,
+      title: "Personality & Communication",
+      content: "Master the art of effective communication and develop a magnetic personality. Learn public speaking, active listening, body language, and interpersonal skills that open doors in both personal and professional life.",
+      outcomes: ["Public speaking skills", "Active listening mastery", "Interpersonal excellence"],
+      price: "₹3,399",
+      duration: "2.5 hours",
+      students: "700+",
+      rating: 4.9
+    },
+    {
+      id: "career-domain-introduction",
+      icon: <FaChalkboardTeacher />,
+      title: "Career & Domain Introduction",
+      content: "Explore diverse career paths and industry domains early. From tech and healthcare to creative arts and business, help students discover their passion and make informed decisions about their future with real-world insights.",
+      outcomes: ["Career path exploration", "Industry domain knowledge", "Passion discovery"],
+      price: "₹2,999",
       duration: "2 hours",
       students: "550+",
+      rating: 4.8
+    },
+    {
+      id: "problem-solving-critical-thinking",
+      icon: <FaPuzzlePiece />,
+      title: "Problem Solving & Critical Thinking",
+      content: "Develop analytical and creative problem-solving skills to tackle real-world challenges. Learn techniques like brainstorming, decision-making frameworks, and logical reasoning to approach problems effectively and innovatively.",
+      outcomes: ["Analytical problem-solving", "Creative thinking techniques", "Decision-making frameworks"],
+      price: "₹3,299",
+      duration: "2.5 hours",
+      students: "600+",
       rating: 4.8
     }
   ];
@@ -273,55 +328,53 @@ const LandingPage = () => {
       </nav>
 
       {/* Hero Section - Modern & Conversion-Focused */}
-      <section id="hero" className="pt-16 pb-12 lg:pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section id="hero" className="pt-16 pb-12 lg:pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Trust Signals Bar */}
-          <div className="flex flex-wrap justify-center items-center gap-6 mb-12 py-4">
+          <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 mb-8 sm:mb-12 py-4">
             {trustSignals.map((signal, index) => (
-              <div key={index} className="flex items-center space-x-2 text-sm">
+              <div key={index} className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm">
                 <span className={signal.color}>{signal.icon}</span>
-                <span className="text-gray-600 font-medium">{signal.text}</span>
+                <span className="text-gray-600 font-medium whitespace-nowrap">{signal.text}</span>
               </div>
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-4 py-2 mb-6">
-                <FaGlobe className="text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-gray-700">Global Classroom for Indian Youth</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-3 sm:px-4 py-2 mb-4 sm:mb-6">
+                <FaGlobe className="text-blue-600 mr-2 text-sm sm:text-base" />
+                <span className="text-xs sm:text-sm font-medium text-gray-700">Global Classroom for Indian Youth</span>
               </div>
               
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
                   World-Class Skills
                 </span>
-                <br />
-                <span className="text-gray-900">for the New Era</span>
+                <span className="text-gray-900 block">for the New Era</span>
               </h1>
               
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Empower your child with practical skills that 95% of schools don't teach. 
                 <span className="font-semibold text-gray-900"> Learn from IIT/IIM experts</span> and never stay behind in the global competition.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
                 <button 
                   onClick={() => scrollToSection('programs')}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto"
                 >
-                  Explore Programs
-                  <FaArrowRight className="inline ml-2" />
+                  Start Learning Today
                 </button>
                 <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+                  onClick={() => openModal('demo')}
+                  className="border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 w-full sm:w-auto"
                 >
                   Get Free Demo
                 </button>
               </div>
 
-              <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-500">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 text-xs sm:text-sm text-gray-500">
                 <div className="flex items-center">
                   <FaCheckCircle className="text-green-500 mr-2" />
                   <span>No Long-term Commitment</span>
@@ -333,78 +386,155 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="relative z-10">
-                <Image 
-                  src="/assets/seminar.jpg" 
-                  alt="Students learning in global classroom" 
-                  width={600} 
-                  height={400} 
-                  className="rounded-2xl shadow-2xl"
-                  priority
-                />
-                <div className="absolute -bottom-6 left-6 right-6 bg-white rounded-xl p-4 shadow-lg border border-gray-100">
-                  <p className="text-center text-gray-700 font-medium italic">
-                    "Learn from the world's best mentors and never stay behind"
+            <div className="relative order-1 lg:order-2 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
+              {/* Background Decorative Elements */}
+              <div className="absolute -z-10 top-4 right-4 w-16 h-16 sm:w-24 sm:h-24 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full opacity-50 blur-xl"></div>
+              <div className="absolute -z-10 bottom-4 left-4 w-12 h-12 sm:w-20 sm:h-20 bg-gradient-to-r from-green-200 to-blue-200 rounded-full opacity-50 blur-xl"></div>
+              
+              <div className="relative">
+                {/* Main Image Container */}
+                <div className="relative aspect-[4/3] w-full">
+                  <Image 
+                    src="/assets/seminar.jpg" 
+                    alt="Students learning in global classroom" 
+                    fill
+                    sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 600px"
+                    className="rounded-2xl shadow-2xl object-cover"
+                    priority
+                  />
+                </div>
+                
+                {/* Quote Overlay - Overlapping bottom of image on all screen sizes */}
+                <div className="absolute -bottom-3 sm:-bottom-4 md:-bottom-6 left-2 sm:left-4 md:left-6 right-2 sm:right-4 md:right-6 bg-white rounded-xl p-2 sm:p-3 md:p-4 shadow-lg border border-gray-100 z-20">
+                  <p className="text-center text-gray-700 font-medium italic text-xs sm:text-sm leading-tight">
+                    "Take ownership of your growth and join the top 1% globally. Master skills effortlessly, build a career that truly fulfills your dream!"
                   </p>
                 </div>
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-400 to-blue-500 text-white p-3 rounded-full shadow-lg">
-                <FaTrophy className="text-xl" />
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white p-3 rounded-full shadow-lg">
-                <FaRocket className="text-xl" />
+                
+                {/* Floating Elements - High z-index to appear above everything */}
+                <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 bg-gradient-to-r from-green-400 to-blue-500 text-white p-2 sm:p-3 rounded-full shadow-lg z-30">
+                  <FaTrophy className="text-sm sm:text-lg md:text-xl" />
+                </div>
+                <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white p-2 sm:p-3 rounded-full shadow-lg z-30">
+                  <FaRocket className="text-sm sm:text-lg md:text-xl" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Expert Faculty Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      {/* Expert Faculty Section - Horizontal Moving Carousel */}
+      <section className="py-16 lg:py-20 bg-gray-50 overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Learn from <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">World-Class Experts</span>
+              Learn under <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">World-Class Experts</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our faculty includes graduates from IIT, IIM, Harvard, and industry leaders from Microsoft, IBM, and top startups.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teachers.map((teacher, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <div className="flex flex-col items-center text-center">
-                  <div className="relative mb-4">
-                    {teacher.useIcon || !teacher.image ? (
-                      <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-                        <FaUserGraduate className="text-white text-2xl" />
+          {/* Carousel Container */}
+          <div className="relative">
+            <div className="overflow-hidden">
+              <div className="flex gap-6 animate-scroll-fast">
+                {/* First set of teachers */}
+                {teachers.map((teacher, index) => (
+                  <div key={`first-${index}`} className="flex-shrink-0 w-80 bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="relative mb-4">
+                        {teacher.useIcon || !teacher.image ? (
+                          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                            <FaUserGraduate className="text-white text-2xl" />
+                          </div>
+                        ) : (
+                          <Image 
+                            src={teacher.image} 
+                            alt={teacher.name} 
+                            width={80} 
+                            height={80} 
+                            className="w-20 h-20 rounded-full object-cover"
+                          />
+                        )}
+                        {teacher.verified && (
+                          <div className="absolute -bottom-1 -right-1 bg-blue-500 rounded-full p-1">
+                            <MdVerified className="text-white text-sm" />
+                          </div>
+                        )}
                       </div>
-                    ) : (
-                      <Image 
-                        src={teacher.image} 
-                        alt={teacher.name} 
-                        width={80} 
-                        height={80} 
-                        className="w-20 h-20 rounded-full object-cover"
-                      />
-                    )}
-                    {teacher.verified && (
-                      <div className="absolute -bottom-1 -right-1 bg-blue-500 rounded-full p-1">
-                        <MdVerified className="text-white text-sm" />
-                      </div>
-                    )}
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">{teacher.name}</h3>
+                      <p className="text-blue-600 font-medium text-sm mb-2">{teacher.credentials}</p>
+                      <p className="text-gray-600 text-sm">{teacher.expertise}</p>
+                    </div>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{teacher.name}</h3>
-                  <p className="text-blue-600 font-medium text-sm mb-2">{teacher.credentials}</p>
-                  <p className="text-gray-600 text-sm">{teacher.expertise}</p>
-                </div>
+                ))}
+                {/* Duplicate set for seamless loop */}
+                {teachers.map((teacher, index) => (
+                  <div key={`second-${index}`} className="flex-shrink-0 w-80 bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="relative mb-4">
+                        {teacher.useIcon || !teacher.image ? (
+                          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                            <FaUserGraduate className="text-white text-2xl" />
+                          </div>
+                        ) : (
+                          <Image 
+                            src={teacher.image} 
+                            alt={teacher.name} 
+                            width={80} 
+                            height={80} 
+                            className="w-20 h-20 rounded-full object-cover"
+                          />
+                        )}
+                        {teacher.verified && (
+                          <div className="absolute -bottom-1 -right-1 bg-blue-500 rounded-full p-1">
+                            <MdVerified className="text-white text-sm" />
+                          </div>
+                        )}
+                      </div>
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">{teacher.name}</h3>
+                      <p className="text-blue-600 font-medium text-sm mb-2">{teacher.credentials}</p>
+                      <p className="text-gray-600 text-sm">{teacher.expertise}</p>
+                    </div>
+                  </div>
+                ))}
+                {/* Third set for extra smoothness */}
+                {teachers.map((teacher, index) => (
+                  <div key={`third-${index}`} className="flex-shrink-0 w-80 bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="relative mb-4">
+                        {teacher.useIcon || !teacher.image ? (
+                          <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                            <FaUserGraduate className="text-white text-2xl" />
+                          </div>
+                        ) : (
+                          <Image 
+                            src={teacher.image} 
+                            alt={teacher.name} 
+                            width={80} 
+                            height={80} 
+                            className="w-20 h-20 rounded-full object-cover"
+                          />
+                        )}
+                        {teacher.verified && (
+                          <div className="absolute -bottom-1 -right-1 bg-blue-500 rounded-full p-1">
+                            <MdVerified className="text-white text-sm" />
+                          </div>
+                        )}
+                      </div>
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">{teacher.name}</h3>
+                      <p className="text-blue-600 font-medium text-sm mb-2">{teacher.credentials}</p>
+                      <p className="text-gray-600 text-sm">{teacher.expertise}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -423,8 +553,8 @@ const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {programCards.map((card, index) => (
-              <div key={card.id} className="bg-white rounded-2xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                <div className="p-6">
+              <div key={card.id} className="bg-white rounded-2xl border-2 border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 overflow-hidden group h-full flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center text-white text-xl">
@@ -437,7 +567,7 @@ const LandingPage = () => {
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{card.title}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{card.content}</p>
+                  <p className="text-gray-600 mb-4 leading-relaxed flex-1 min-h-[4.5rem]">{card.content}</p>
 
                   {/* Stats */}
                   <div className="flex items-center justify-between mb-4 text-sm">
@@ -452,9 +582,9 @@ const LandingPage = () => {
                   </div>
 
                   {/* Outcomes */}
-                  <div className="mb-6">
+                  <div className="mb-6 flex-1">
                     <h4 className="font-semibold text-gray-900 mb-2">What Your Child Will Gain:</h4>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 min-h-[5rem]">
                       {card.outcomes.map((outcome, idx) => (
                         <li key={idx} className="flex items-start text-sm text-gray-600">
                           <FaCheckCircle className="text-green-500 mr-2 mt-0.5 flex-shrink-0" />
@@ -466,7 +596,7 @@ const LandingPage = () => {
 
                   <button 
                     onClick={() => openModal(card.id)}
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 group-hover:transform group-hover:-translate-y-1"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 group-hover:transform group-hover:-translate-y-1 mt-auto"
                   >
                     Learn More & Enroll
                     <FaChevronRight className="inline ml-2" />
@@ -478,7 +608,8 @@ const LandingPage = () => {
 
           {/* CTA Banner */}
           <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white">
-            <h3 className="text-2xl font-bold mb-4">Not Sure Which Program is Right for Your Child?</h3>
+            <h3 className="text-2xl font-bold mb-2">Not Sure Which Program is Right for Your Child?</h3>
+            <p className="text-xl text-blue-200 mb-4">Or get a bundled program with all courses for maximum impact</p>
             <p className="text-blue-100 mb-6">Get a free consultation with our education experts</p>
             <button 
               onClick={() => scrollToSection('contact')}
