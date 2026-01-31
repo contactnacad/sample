@@ -7,7 +7,9 @@ import {
   FaBrain, FaUsers, FaChalkboardTeacher, FaBars, FaBan, FaHeart, FaPuzzlePiece,
   FaStar, FaCheck, FaArrowRight, FaTimes, FaChartLine, FaPlay, FaQuoteLeft,
   FaGlobe, FaLightbulb, FaBullseye, FaTrophy, FaRocket, FaPhone, FaEnvelope,
-  FaMapMarkerAlt, FaCheckCircle, FaAward, FaUserGraduate, FaChevronRight
+  FaMapMarkerAlt, FaCheckCircle, FaAward, FaUserGraduate, FaChevronRight,
+  FaClock, FaListUl, FaGift, FaUserTie, FaDesktop, FaChartBar, FaVideo,
+  FaPlayCircle, FaBookOpen, FaTools, FaCertificate
 } from 'react-icons/fa';
 import { MdOutlineWork, MdTouchApp, MdSupervisorAccount, MdVerified, MdSchool } from 'react-icons/md';
 
@@ -60,122 +62,353 @@ const LandingPage = () => {
   const programCards = [
     {
       id: "digital-safety",
-      icon: <FaShieldAlt />,
+      icon: <FaShieldAlt className="text-yellow-500 text-2xl" />,
       title: "Digital Safety & Fraud Prevention",
       content: "Scammers prey on kids, teens and senior citizens—don't let yours be the next victim. This powerful session arms students and parents with essential skills to detect and prevent digital frauds before it's too late.",
-      outcomes: ["80% reduction in vulnerability", "Recognize 9/10 common scams", "Practical protection tools"],
-      price: "₹2,999",
-      duration: "2 hours",
+      itinerary: [
+        "Understanding digital threats in 2026",
+        "Recognizingvlatest and common scam techniques",
+        "Social engineering and manipulation tactics",
+        "Secure digital practices for daily life",
+        "Protecting personal information online",
+        "Digital rights and fraud blackmails",
+        "Identifying phishing attempts",
+        "Interactive and practical fraud detection exercises",
+        "Certificate and free exercise platform"
+      ],
+      outcomes: [
+        "80% reduction in student vulnerability to online scams",
+        "Ability to identify and avoid 9 out of 10 common online threats",
+        "Practical tools to verify information authenticity",
+        "Improved digital citizenship and responsibility"
+      ],
+      testimonial: {
+        content: "After implementing the Digital Safety workshop, reported incidents of students falling victim to online scams dropped to near zero. The interactive format kept students engaged while teaching critical skills that extend beyond the classroom.",
+        author: "Dr. Rajesh Kumar",
+        position: "Principal, Delhi Public School"
+      },
+      price: "₹1,299",
+      duration: "Live + Platform Access",
       students: "500+",
       rating: 4.9
     },
     {
       id: "emotional-intelligence",
-      icon: <FaBrain />,
+      icon: <FaBrain className="text-yellow-500 text-2xl" />,
       title: "Emotional Intelligence",
       content: "Academic excellence alone isn't enough—students must master self-awareness, empathy, and resilience to thrive in life and career. Learn how to always stay happy, manage anger, and build strong relationships through self-awareness, self-regulation, social awareness, and relationship management.",
-      outcomes: ["Enhanced self-awareness", "Better anger management", "Strong relationship building"],
-      price: "₹3,499",
-      duration: "2.5 hours",
+      itinerary: [
+        "The four pillars of emotional intelligence",
+        "Self-awareness exercises and reflection",
+        "Emotion regulation techniques on Anger, stress and guilt",
+        "Building empathy through perspective-taking",
+        "Conflict resolution strategies",
+        "Stress management and resilience building",
+        "Communication skills for healthy relationships",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "42% reduction in classroom conflicts and bullying incidents",
+        "80% Improved behaivior and social presence ",
+        "Enhanced cooperation and teamwork among students",
+        "Development of leadership qualities and social skills"
+      ],
+      testimonial: {
+        content: "The transformation in our school culture has been remarkable since introducing the Emotional Intelligence program. Students are more collaborative, conflicts are resolved constructively, and teachers report a more positive learning environment across all grades.",
+        author: "Smt. Anita Sharma",
+        position: "Principal, Kendriya Vidyalaya"
+      },
+      price: "₹1,399",
+      duration: "Live + Platform Access",
       students: "750+",
       rating: 4.8
     },
     {
       id: "personal-finance",
-      icon: <FaHandHoldingUsd />,
+      icon: <FaHandHoldingUsd className="text-yellow-500 text-2xl" />,
       title: "Personal Finance",
       content: "Equip students with essential money management skills from an early age. Learn budgeting, saving, and smart investments that can lay the foundation for a successful financial future.",
-      outcomes: ["Create personal budgets", "Smart saving strategies", "Investment basics"],
-      price: "₹2,799",
-      duration: "2 hours",
+      itinerary: [
+        "Fundamentals of money management",
+        "Creating and maintaining a personal budget",
+        "Saving strategies for different goals",
+        "Why and how to avoid wasting money on unecessary things",
+        "Introduction to banking and financial institutions",
+        "Understanding debt and credit responsibly",
+        "Assets vs liability and breaking uneccessary purchasing habits",
+        "Practical financial decision-making exercises",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "95% of students create their first personal budget",
+        "Students demonstrate ability to make informed financial decisions",
+        "Development of healthy money attitudes and habits",
+        "Increased awareness of financial planning for future goals"
+      ],
+      testimonial: {
+        content: "Parents have reached out to thank us for introducing the Personal Finance seminar. Many reported their children initiating family budget discussions and even helping younger siblings understand the value of saving. It's teaching life skills that extend well beyond our campus.",
+        author: "Shri Vikram Mehta",
+        position: "Headmaster, Modern Academy"
+      },
+      price: "₹1,199",
+      duration: "Live + Platform Access",
       students: "600+",
       rating: 4.9
     },
     {
       id: "startup-entrepreneurship",
-      icon: <MdOutlineWork />,
+      icon: <MdOutlineWork className="text-yellow-500 text-2xl" />,
       title: "Startup & Entrepreneurship",
       content: "Ignite entrepreneurial spirit—teach idea validation, business planning, and how to build their own venture.",
-      outcomes: ["Business idea validation", "Business planning skills", "Venture building mindset"],
-      price: "₹3,999",
-      duration: "3 hours",
+      itinerary: [
+        "Entrepreneurial mindset development",
+        "Problem identification and solution brainstorming",
+        "Business model canvas creation",
+        "Market research methodologies",
+        "Minimum viable product development",
+        "Pitch creation and presentation skills",
+        "Team building and resource management",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "Students develop and pitch original business ideas",
+        "Understanding of basic business economics and operations",
+        "Improved creative problem-solving abilities",
+        "Enhanced presentation and communication skills"
+      ],
+      testimonial: {
+        content: "The Entrepreneurship program created a buzz unlike anything we've seen before. Students have formed innovation clubs, started small ventures within the school, and two teams even participated in national-level startup competitions. It's unlocked potential we didn't know existed.",
+        author: "Mr. Sunil Agarwal",
+        position: "Director, Sunrise International School"
+      },
+      price: "₹1,499",
+      duration: "Live + Platform Access",
       students: "400+",
       rating: 4.7
     },
     {
       id: "leadership-responsibility",
-      icon: <MdSupervisorAccount />,
+      icon: <MdSupervisorAccount className="text-yellow-500 text-2xl" />,
       title: "Leadership & Responsibility",
       content: "Cultivate strong leaders—teach accountability, responsibility, and the mindset needed for future success.",
-      outcomes: ["Leadership accountability", "Responsibility mindset", "Future success skills"],
-      price: "₹3,299",
-      duration: "2 hours",
+      itinerary: [
+        "Core leadership values and principles",
+        "Responsibility and accountability frameworks",
+        "Decision-making under pressure",
+        "Teamwork, delegation and jeolousy avoidance",
+        "Effective communication for leaders",
+        "Ethical leadership practices",
+        "Project planning and execution",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "60% increase in student-led initiatives",
+        "Development of ethical decision-making frameworks",
+        "Enhanced ability to motivate and work with teams",
+        "Improved planning and organizational skills"
+      ],
+      testimonial: {
+        content: "We've seen remarkable growth in student ownership of school initiatives after the Leadership program. The student council has become more effective, and we've noticed increased participation in community service projects as students apply their leadership skills in meaningful ways.",
+        author: "Dr. Meenakshi Gupta",
+        position: "Principal, Heritage School"
+      },
+      price: "₹1,349",
+      duration: "Live + Platform Access",
       students: "550+",
       rating: 4.8
     },
     {
       id: "ai-digital-literacy",
-      icon: <MdTouchApp />,
-      title: "AI & Digital Literacy in 2025",
+      icon: <MdTouchApp className="text-yellow-500 text-2xl" />,
+      title: "AI & Digital Literacy in 2026",
       content: "Equip students with essential digital tools and skills, including AI technologies, required for success in today's tech-driven world. From using basic software to navigating online platforms and understanding AI's role, prepare them for the future workplace.",
-      outcomes: ["AI tool proficiency", "Digital platform navigation", "Future workplace readiness"],
-      price: "₹3,799",
-      duration: "2.5 hours",
+      itinerary: [
+        "Current AI landscape and applications",
+        "Real exercise to build a website in 20 mins",
+        "Critical evaluation of AI-generated content",
+        "Practical AI tools for productivity and learning",
+        "Digital research and information literacy",
+        "Responsible AI usage and ethics",
+        "Future of work in an AI-augmented world",
+        "Hands-on experience with common AI platforms",
+        "Real exercise to build a website in 20 mins",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "85% of students demonstrate proficiency with common AI tools",
+        "Improved critical thinking when consuming digital content",
+        "Enhanced productivity using digital organization tools",
+        "Understanding of AI's capabilities, limitations and ethical considerations"
+      ],
+      testimonial: {
+        content: "The AI & Digital Literacy program has transformed how our students engage with technology. They're now not just consumers but intelligent evaluators and creators, using AI tools responsibly while maintaining critical thinking. This is precisely the preparation they need for higher education and future careers.",
+        author: "Mrs. Priyanka Joshi",
+        position: "Principal, Springfield Academy"
+      },
+      price: "₹1,449",
+      duration: "Live + Platform Access",
       students: "800+",
       rating: 4.9
     },
     {
       id: "mental-physical-health",
-      icon: <FaHeart />,
+      icon: <FaHeart className="text-yellow-500 text-2xl" />,
       title: "Mental & Physical Health",
       content: "Teach students the importance of balancing mental and physical well-being. Learn stress management, mindfulness, Healthy Eating, nutrition, and exercise habits to lead a healthy and fulfilling life.",
-      outcomes: ["Stress management techniques", "Mindfulness practices", "Healthy lifestyle habits"],
-      price: "₹3,199",
-      duration: "2.5 hours",
+      itinerary: [
+        "Mind-body connection fundamentals",
+        "Stress recognition and healthy management",
+        "Mindfulness and meditation practices",
+        "Nutrition basics for adolescents",
+        "Developing sustainable exercise habits",
+        "Sleep hygiene and its impact on performance",
+        "Building healthy daily routines",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "7/10 students have Reduced stress levels and improved focus in class after seminar",
+        "80% Adoption of healthier eating habits and physical activity",
+        "80% Better sleep quality reported by students and parents",
+        "Development of coping strategies for academic pressure"
+      ],
+      testimonial: {
+        content: "The holistic approach of the Mental & Physical Health program resonated deeply with our school's philosophy. We've seen improvements in attendance, focus, and even academic performance as students implement the wellness practices. Parents particularly appreciate the practical nutrition guidance.",
+        author: "Dr. Anjali Desai",
+        position: "Principal, The Wellness Academy"
+      },
+      price: "₹1,249",
+      duration: "Live + Platform Access",
       students: "650+",
       rating: 4.8
     },
     {
       id: "false-marketing-prevention",
-      icon: <FaBan />,
+      icon: <FaBan className="text-yellow-500 text-2xl" />,
       title: "False Marketing Prevention",
       content: "Empower students to identify and avoid false advertising, misleading claims, and manipulative marketing tactics. Develop critical thinking skills to make informed decisions as consumers.",
-      outcomes: ["Identify false advertising", "Critical thinking skills", "Informed consumer decisions"],
-      price: "₹2,899",
-      duration: "2 hours",
+      itinerary: [
+        "Psychology behind marketing and advertising",
+        "Common persuasion and biases techniques in media",
+        "Identifying misleading claims and statistics",
+        "Digital advertising and targeted marketing",
+        "Media literacy and critical evaluation",
+        "Responsible consumption practices",
+        "Case studies of false marketing campaigns",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "75% improvement in ability to identify misleading claims",
+        "Development of analytical media consumption habits",
+        "More informed consumer choices and spending patterns",
+        "Reduced susceptibility to manipulative marketing"
+      ],
+      testimonial: {
+        content: "In today's media-saturated environment, the False Marketing Prevention program has been invaluable. Our students now approach advertisements with healthy skepticism and apply critical thinking before making decisions. Parents have noted more thoughtful consumption habits at home as well.",
+        author: "Mr. Rajeev Malhotra",
+        position: "Director, Progressive Public School"
+      },
+      price: "₹1,149",
+      duration: "Live + Platform Access",
       students: "450+",
       rating: 4.7
     },
     {
-      id: "personality-communication",
+      id: "personality & communication",
       icon: <FaUsers />,
       title: "Personality & Communication",
       content: "Master the art of effective communication and develop a magnetic personality. Learn public speaking, active listening, body language, and interpersonal skills that open doors in both personal and professional life.",
-      outcomes: ["Public speaking skills", "Active listening mastery", "Interpersonal excellence"],
-      price: "₹3,399",
-      duration: "2.5 hours",
+      itinerary: [
+        "Understanding personality types and self-awareness",
+        "Verbal and non-verbal communication mastery",
+        "Public speaking and presentation skills",
+        "Active listening and empathy development",
+        "Body language and confidence building",
+        "Conversation skills and networking basics",
+        "Handling criticism and giving constructive feedback",
+        "Professional etiquette and first impressions",
+        "Practical communication exercises and role-plays",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "70% improvement in public speaking confidence",
+        "Enhanced ability to express ideas clearly and persuasively",
+        "Better interpersonal relationships and social skills",
+        "Development of professional communication habits",
+        "Increased self-confidence in diverse social situations"
+      ],
+      testimonial: {
+        content: "The Personality & Communication program transformed our students from hesitant speakers to confident communicators. We've seen remarkable improvement in their classroom participation, leadership roles, and even parent-teacher interactions. This is a skill set they'll use for life.",
+        author: "Mrs. Kavita Menon",
+        position: "Principal, Blue Bells International School"
+      },
+      price: "₹1,399",
+      duration: "Live + Platform Access",
       students: "700+",
       rating: 4.9
     },
     {
-      id: "career-domain-introduction",
-      icon: <FaChalkboardTeacher />,
+      id: "career & domain Introduction",
+      icon: <MdOutlineWork />,
       title: "Career & Domain Introduction",
       content: "Explore diverse career paths and industry domains early. From tech and healthcare to creative arts and business, help students discover their passion and make informed decisions about their future with real-world insights.",
-      outcomes: ["Career path exploration", "Industry domain knowledge", "Passion discovery"],
-      price: "₹2,999",
-      duration: "2 hours",
+      itinerary: [
+        "Overview of major career domains and industries",
+        "Technology sector: AI, software, cybersecurity, data science",
+        "Healthcare and life sciences opportunities",
+        "Creative fields: design, content, media, arts",
+        "Business, finance, and consulting paths",
+        "Engineering and manufacturing specializations",
+        "Government, law, and public service careers",
+        "Understanding skill requirements for different domains",
+        "Career planning and goal-setting workshops",
+        "Guest speaker sessions from industry professionals",
+        "Certificate and career assessment tools"
+      ],
+      outcomes: [
+        "85% of students identify 2-3 career paths aligned with their interests",
+        "Clear understanding of skills needed for chosen domains",
+        "Informed decision-making for stream and subject selection",
+        "Reduced career confusion and anxiety about the future",
+        "Early exposure to industry trends and opportunities"
+      ],
+      testimonial: {
+        content: "The Career & Domain Introduction seminar was a game-changer for our students in grades 9-11. Many students had no idea about the breadth of career options available. After this program, we noticed more purposeful academic choices and increased motivation as students connected their studies to real-world careers.",
+        author: "Mr. Sandeep Malhotra",
+        position: "Career Counselor, Cambridge International School"
+      },
+      price: "₹999",
+      duration: "Live + Platform Access",
       students: "550+",
       rating: 4.8
     },
     {
-      id: "problem-solving-critical-thinking",
-      icon: <FaPuzzlePiece />,
+      id: "problem-solving",
+      icon: <FaPuzzlePiece className="text-yellow-500 text-2xl" />,
       title: "Problem Solving & Critical Thinking",
       content: "Develop analytical and creative problem-solving skills to tackle real-world challenges. Learn techniques like brainstorming, decision-making frameworks, and logical reasoning to approach problems effectively and innovatively.",
-      outcomes: ["Analytical problem-solving", "Creative thinking techniques", "Decision-making frameworks"],
-      price: "₹3,299",
-      duration: "2.5 hours",
+      itinerary: [
+        "Critical thinking fundamentals and frameworks",
+        "Creative problem-solving methodologies with real examples",
+        "Systems thinking and complex problem analysis",
+        "Decision-making processes and biases",
+        "Design thinking for student applications",
+        "Collaborative problem-solving techniques",
+        "Real-world challenge activities",
+        "Certificate and practice platform"
+      ],
+      outcomes: [
+        "Significant improvement in academic problem-solving tasks",
+        "Enhanced ability to approach unfamiliar challenges",
+        "Development of structured thinking processes",
+        "Increased confidence in tackling complex issues"
+      ],
+      testimonial: {
+        content: "The Problem Solving program transformed our students' approach to challenges both inside and outside the classroom. Teachers report more thoughtful discussions, more innovative project solutions, and greater persistence when faced with difficult tasks. These are truly future-ready skills.",
+        author: "Prof. Sameer Khanna",
+        position: "Principal, Excellence Academy"
+      },
+      price: "₹1,299",
+      duration: "Live + Platform Access",
       students: "600+",
       rating: 4.8
     }
@@ -258,7 +491,7 @@ const LandingPage = () => {
     },
     {
       question: "Are the courses affordable for middle-class families?",
-      answer: "Absolutely! We've priced our programs at ₹2,799-₹3,999 (cost of 2-3 restaurant meals) because we believe every child deserves these essential skills. We also offer payment plans and scholarships."
+      answer: "Absolutely! We've priced our programs at ₹999-₹1,499 (cost of 1-2 restaurant meals) because we believe every child deserves these essential skills. We also offer payment plans and scholarships."
     },
     {
       question: "How do I know if my child will actually benefit?",
@@ -736,6 +969,85 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Invite Us to Your School Section */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center bg-gradient-to-r from-orange-100 to-red-100 rounded-full px-6 py-3 mb-6">
+              <MdSchool className="text-orange-600 mr-3 text-xl" />
+              <span className="font-semibold text-orange-800">For Educational Institutions</span>
+            </div>
+            
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Bring World-Class Skills to 
+              <span className="block bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Your School</span>
+            </h2>
+            
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Transform your students' futures with our comprehensive life skills programs. Join 25+ partner schools 
+              across India who are already preparing their students for global success.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 border border-orange-100">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <FaUsers className="text-white text-xl" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Bulk Enrollment</h3>
+                <p className="text-gray-600 text-sm">Special pricing for schools with multiple student enrollments</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 border border-orange-100">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <FaChalkboardTeacher className="text-white text-xl" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Custom Programs</h3>
+                <p className="text-gray-600 text-sm">Tailored curriculum to fit your school's specific needs</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 border border-orange-100">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <FaChartBar className="text-white text-xl" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Progress Tracking</h3>
+                <p className="text-gray-600 text-sm">Detailed analytics and reports for school administration</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Ready to Partner with Us?</h3>
+              <p className="text-orange-100 mb-6 text-lg">
+                Let's discuss how we can bring these transformative programs to your students. 
+                Get special institutional pricing and support.
+              </p>
+              
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center hover:scale-105"
+              >
+                Invite Us to Your School
+                <FaArrowRight className="ml-2" />
+              </button>
+              
+              <div className="mt-6 flex flex-wrap justify-center items-center gap-6 text-sm text-orange-100">
+                <div className="flex items-center">
+                  <FaCheckCircle className="text-orange-300 mr-2" />
+                  <span>Free Demo Sessions</span>
+                </div>
+                <div className="flex items-center">
+                  <FaCheckCircle className="text-orange-300 mr-2" />
+                  <span>Flexible Scheduling</span>
+                </div>
+                <div className="flex items-center">
+                  <FaCheckCircle className="text-orange-300 mr-2" />
+                  <span>Institutional Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Student Success Stories */}
       <section id="testimonials" className="py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
@@ -920,7 +1232,7 @@ const LandingPage = () => {
               href="https://wa.me/919153488985?text=Hello%20Nonacad,%20I%20want%20to%20enroll%20my%20child%20in%20your%20programs.%20Please%20provide%20more%20information."
               className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center"
             >
-              Enroll Now - Starting ₹2,799
+              Enroll Now - Starting ₹999
               <FaArrowRight className="ml-2" />
             </a>
             <button 
@@ -1106,46 +1418,199 @@ const LandingPage = () => {
       </footer>
 
       {/* Program Detail Modal */}
-      {activeModal && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={(e) => {
-          if (e.target === e.currentTarget) closeModal();
-        }}>
-          <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
-            <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center">
-              <h2 className="text-2xl font-bold text-gray-900">Program Details</h2>
-              <button onClick={closeModal} className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-                <FaTimes className="text-gray-500" />
-              </button>
-            </div>
-            
-            <div className="p-6">
-              <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <FaGraduationCap className="text-white text-2xl" />
+      {activeModal && (() => {
+        const selectedProgram = programCards.find(card => card.id === activeModal);
+        if (!selectedProgram) return null;
+        
+        return (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={(e) => {
+            if (e.target === e.currentTarget) closeModal();
+          }}>
+            <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl">
+              <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center">
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center text-white">
+                    {selectedProgram.icon}
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900">{selectedProgram.title}</h2>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ready to Enroll?</h3>
-                <p className="text-gray-600 mb-6">Get detailed program information and start your child's transformation journey.</p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="https://wa.me/919153488985?text=Hello%20Nonacad,%20I%20want%20detailed%20information%20about%20your%20programs%20and%20enrollment%20process."
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center"
-                  >
-                    Get Program Details
-                    <FaArrowRight className="ml-2" />
-                  </a>
-                  <button 
-                    onClick={() => { closeModal(); scrollToSection('contact'); }}
-                    className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
-                  >
-                    Schedule Call
-                  </button>
+                <button onClick={closeModal} className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                  <FaTimes className="text-gray-500" />
+                </button>
+              </div>
+              
+              <div className="p-6">
+                {/* Program Description */}
+                <div className="mb-8">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">{selectedProgram.content}</p>
+                  <div className="flex items-center gap-6 text-sm text-gray-600">
+                    <div className="flex items-center">
+                      <FaClock className="mr-2 text-blue-500" />
+                      <span>1 month commitment</span>
+                    </div>
+                    <div className="flex items-center">
+                      <FaUsers className="mr-2 text-green-500" />
+                      <span>{selectedProgram.students} enrolled</span>
+                    </div>
+                    <div className="flex items-center">
+                      <FaStar className="mr-2 text-yellow-500" />
+                      <span>{selectedProgram.rating} rating</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Program Itinerary */}
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <FaListUl className="mr-2 text-blue-500" />
+                    What Your Child Will Learn
+                  </h3>
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 border border-blue-100">
+                    <ul className="space-y-3">
+                      {selectedProgram.itinerary.map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <span className="text-white text-xs font-bold">{index + 1}</span>
+                          </div>
+                          <span className="text-gray-700 leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* What You Get */}
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <FaGift className="mr-2 text-green-500" />
+                    What You Get
+                  </h3>
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="flex items-start">
+                        <FaUserTie className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Personal Counselling</h4>
+                          <p className="text-gray-600 text-xs">One-on-one guidance sessions</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaDesktop className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Platform Access</h4>
+                          <p className="text-gray-600 text-xs">24/7 learning portal access</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaChartBar className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Performance Reports</h4>
+                          <p className="text-gray-600 text-xs">Separate reports to school & parents</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaVideo className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Live Classes</h4>
+                          <p className="text-gray-600 text-xs">Interactive live sessions</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaPlayCircle className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Recorded Lectures</h4>
+                          <p className="text-gray-600 text-xs">Access anytime for revision</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaBookOpen className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Case Studies</h4>
+                          <p className="text-gray-600 text-xs">Real-world examples & scenarios</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaTools className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Practical Exercises</h4>
+                          <p className="text-gray-600 text-xs">Hands-on learning activities</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <FaCertificate className="text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm">Certificate</h4>
+                          <p className="text-gray-600 text-xs">Course completion certificate</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Expected Outcomes */}
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <FaTrophy className="mr-2 text-yellow-500" />
+                    Expected Outcomes
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {selectedProgram.outcomes.map((outcome, index) => (
+                      <div key={index} className="flex items-start bg-green-50 rounded-xl p-4 border border-green-100">
+                        <FaCheckCircle className="text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700 text-sm leading-relaxed">{outcome}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Testimonial */}
+                {selectedProgram.testimonial && (
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                      <FaQuoteLeft className="mr-2 text-purple-500" />
+                      What Educators Say
+                    </h3>
+                    <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-100">
+                      <p className="text-gray-700 italic leading-relaxed mb-4">"{selectedProgram.testimonial.content}"</p>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                          <FaUserGraduate className="text-white" />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-gray-900">{selectedProgram.testimonial.author}</p>
+                          <p className="text-sm text-gray-600">{selectedProgram.testimonial.position}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* CTA Section */}
+                <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Ready to Transform Your Child's Future?</h3>
+                  <p className="text-blue-100 mb-6 text-lg">Join thousands of students already building tomorrow's skills today.</p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button 
+                      onClick={() => { closeModal(); scrollToSection('contact'); }}
+                      className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center"
+                    >
+                      Schedule a Call
+                      <FaArrowRight className="ml-2" />
+                    </button>
+                    <button 
+                      onClick={() => { closeModal(); scrollToSection('contact'); }}
+                      className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+                    >
+                      Know More
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
     </div>
   );
 };
