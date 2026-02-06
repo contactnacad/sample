@@ -51,12 +51,57 @@ const LandingPage = () => {
   ];
 
   const approachSteps = [
-    { icon: <FaUserGraduate />, title: "Learn from the Best", desc: "World-class mentors with real industry experience", color: "from-blue-500 to-blue-600" },
-    { icon: <FaLightbulb />, title: "Real Case Studies", desc: "Learn from actual success stories and examples", color: "from-purple-500 to-purple-600" },
-    { icon: <FaBullseye />, title: "Hands-on Practice", desc: "Apply knowledge through interactive exercises", color: "from-green-500 to-green-600" },
-    { icon: <FaChartLine />, title: "Track Progress", desc: "Monitor growth with detailed analytics", color: "from-orange-500 to-orange-600" },
-    { icon: <FaTrophy />, title: "Real Challenges", desc: "Test skills in real-world scenarios", color: "from-red-500 to-red-600" },
-    { icon: <FaRocket />, title: "Global Success", desc: "Apply skills worldwide and achieve excellence", color: "from-indigo-500 to-indigo-600" }
+    { 
+      icon: <FaUserTie />, 
+      title: "Start with Counseling", 
+      desc: "For maximum impact, our expert counsellors understand every student in depth", 
+      color: "from-pink-500 to-rose-600",
+      image: "/assets/counseling nonacad.webp",
+      hasImage: true
+    },
+    { 
+      icon: <FaUserGraduate />, 
+      title: "Learn from the Best", 
+      desc: "World-class mentors with real industry experience", 
+      color: "from-blue-500 to-blue-600",
+      image: "/assets/meet nonacad.jpeg",
+      hasImage: true
+    },
+    { 
+      icon: <FaBookOpen />, 
+      title: "Real Case Studies from Research", 
+      desc: "Learn from actual research-backed success stories and examples", 
+      color: "from-purple-500 to-purple-600",
+      hasImage: false
+    },
+    { 
+      icon: <FaTools />, 
+      title: "Hands-on Practice", 
+      desc: "Apply knowledge through interactive exercises and real scenarios", 
+      color: "from-green-500 to-green-600",
+      hasImage: false
+    },
+    { 
+      icon: <FaChartLine />, 
+      title: "Track Progress", 
+      desc: "Monitor growth with detailed analytics and personalized feedback", 
+      color: "from-orange-500 to-orange-600",
+      hasImage: false
+    },
+    { 
+      icon: <FaBullseye />, 
+      title: "Skill Application in Real Life", 
+      desc: "Test and apply skills in real-world scenarios and challenges", 
+      color: "from-red-500 to-red-600",
+      hasImage: false
+    },
+    { 
+      icon: <FaGlobe />, 
+      title: "Global Success", 
+      desc: "Apply skills worldwide and achieve excellence on the global stage", 
+      color: "from-indigo-500 to-indigo-600",
+      hasImage: false
+    }
   ];
 
   const programCards = [
@@ -487,7 +532,7 @@ const LandingPage = () => {
   const faqs = [
     {
       question: "How do these programs complement my child's regular studies?",
-      answer: "Our programs focus on practical life skills that traditional curriculum doesn't cover - like digital safety, financial literacy, and emotional intelligence. These skills actually improve academic performance by 15-20% on average."
+      answer: "Our programs focus on practical life skills that traditional curriculum doesn't cover - like digital safety, financial literacy, and emotional intelligence. These skills actually improve academic performance by more than 30% on average."
     },
     {
       question: "Are the courses affordable for middle-class families?",
@@ -495,11 +540,11 @@ const LandingPage = () => {
     },
     {
       question: "How do I know if my child will actually benefit?",
-      answer: "We provide detailed progress reports and practical assignments. 94% of parents report visible improvements within 2 weeks. Plus, we offer a 100% satisfaction guarantee."
+      answer: "We provide detailed progress reports and practical assignments. 70% of parents report visible improvements within 2 weeks. Plus, we offer a 100% satisfaction guarantee."
     },
     {
       question: "Can schools integrate these programs into their curriculum?",
-      answer: "Yes! We work with 25+ schools already. Our programs are designed to fit into existing schedules and complement academic learning with practical skills."
+      answer: "Yes! We work with 25+ schools already. Our programs are designed to fit into existing schedules and complement academic learning with practical skills. Schools are reporting a parent satisfaction of 100% with our program."
     }
   ];
 
@@ -906,38 +951,81 @@ const LandingPage = () => {
       {/* Our Approach Section */}
       <section id="approach" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 px-4">
               Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Proven Approach</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A systematic 6-step methodology that transforms students into confident, skilled individuals ready for global success.
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+              A systematic 7-step methodology that transforms students into confident, skilled individuals ready for global success.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {approachSteps.map((step, index) => (
-              <div key={index} className="relative group">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    {step.icon}
+          {/* Step-by-step approach with connecting lines */}
+          <div className="relative">
+            {/* Connecting line for desktop */}
+            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 transform -translate-y-1/2 z-0"></div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 relative z-10">
+              {approachSteps.map((step, index) => (
+                <div key={index} className="relative group">
+                  <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                    {/* Step Number Badge */}
+                    <div className="absolute -top-3 -left-3 w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold shadow-lg z-20">
+                      {index + 1}
+                    </div>
+                    
+                    {/* Image or Icon */}
+                    <div className="mb-4 sm:mb-6 flex justify-center">
+                      {step.hasImage && step.image ? (
+                        <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-md group-hover:scale-105 transition-transform duration-300">
+                          <Image 
+                            src={step.image} 
+                            alt={step.title}
+                            fill
+                            sizes="(max-width: 640px) 96px, (max-width: 768px) 112px, 128px"
+                            className="object-cover"
+                          />
+                        </div>
+                      ) : (
+                        <div className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r ${step.color} rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                          {step.icon}
+                        </div>
+                      )}
+                    </div>
+                    
+                    <div className="flex-1 text-center">
+                      <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 leading-tight px-2">{step.title}</h3>
+                      <p className="text-gray-600 leading-relaxed text-xs sm:text-sm px-1">{step.desc}</p>
+                    </div>
                   </div>
                   
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-sm font-bold text-gray-600">
-                    {index + 1}
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{step.desc}</p>
+                  {/* Arrow connector for larger screens */}
+                  {index < approachSteps.length - 1 && (
+                    <div className="hidden xl:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-30">
+                      <div className="w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center border-2 border-gray-200">
+                        <FaChevronRight className="text-gray-400 text-sm" />
+                      </div>
+                    </div>
+                  )}
                 </div>
-                
-                {index < approachSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                    <FaChevronRight className="text-gray-300 text-xl" />
-                  </div>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-12 sm:mt-16 text-center px-4">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-4">
+              <FaRocket className="text-blue-600 mr-2 text-sm sm:text-base" />
+              <span className="text-blue-800 font-semibold text-sm sm:text-base">Ready to Start Your Journey?</span>
+            </div>
+            <p className="text-gray-600 mb-6 text-sm sm:text-base max-w-2xl mx-auto">Follow our proven 7-step approach and watch your child transform into a confident global citizen.</p>
+            <button 
+              onClick={() => scrollToSection('programs')}
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 inline-flex items-center text-sm sm:text-base"
+            >
+              Explore Our Programs
+              <FaArrowRight className="ml-2" />
+            </button>
           </div>
         </div>
       </section>
