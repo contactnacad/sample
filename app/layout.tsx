@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Unacad- Learn what Matters",
+  title: "Nonacad - Learn what Matters",
   description: "Unacademic Skill for the Next Generation",
+  icons: {
+    icon: "/assets/logo.svg",
+    shortcut: "/assets/logo.svg",
+    apple: "/assets/logo.svg",
+  },
 };
 
 export default function RootLayout({

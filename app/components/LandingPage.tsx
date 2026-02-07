@@ -554,13 +554,15 @@ const LandingPage = () => {
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-xl z-50 border-b border-gray-100 shadow-sm">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <FaGraduationCap className="text-white text-lg" />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Nonacad
-              </span>
+            <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
+              <Image 
+                src="/assets/navlogo.svg" 
+                alt="Nonacad - Global Classroom for Indian Youth" 
+                width={160} 
+                height={40}
+                className="h-8 w-auto"
+                priority
+              />
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -620,9 +622,15 @@ const LandingPage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
             <div className="text-center lg:text-left order-2 lg:order-1">
-              <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-3 sm:px-4 py-2 mb-4 sm:mb-6">
-                <FaGlobe className="text-blue-600 mr-2 text-sm sm:text-base" />
-                <span className="text-xs sm:text-sm font-medium text-gray-700">Global Classroom for Indian Youth</span>
+              <div className="mb-4 sm:mb-6">
+                <Image 
+                  src="/assets/navlogo.svg" 
+                  alt="Nonacad - Global Classroom for Indian Youth" 
+                  width={280} 
+                  height={60}
+                  className="h-12 sm:h-14 w-auto mx-auto lg:mx-0"
+                  priority
+                />
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6">
@@ -1307,6 +1315,15 @@ const LandingPage = () => {
       {/* CTA Section */}
       <section className="py-16 lg:py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container mx-auto px-4 lg:px-8 text-center">
+          <div className="mb-6">
+            <Image 
+              src="/assets/logo.svg" 
+              alt="Nonacad" 
+              width={100} 
+              height={40}
+              className="h-8 w-auto mx-auto opacity-90"
+            />
+          </div>
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             Ready to Transform Your Child's Future?
           </h2>
@@ -1459,11 +1476,14 @@ const LandingPage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                  <FaGraduationCap className="text-white text-lg" />
-                </div>
-                <span className="text-xl font-bold">Nonacad</span>
+              <div className="mb-4">
+                <Image 
+                  src="/assets/logo.svg" 
+                  alt="Nonacad" 
+                  width={120} 
+                  height={40}
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-gray-400 leading-relaxed">
                 Empowering Indian students with world-class practical skills for global success.
